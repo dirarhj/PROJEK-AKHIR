@@ -1,0 +1,13 @@
+.judul{
+    text-align: center;
+    margin-top: 150px;
+    color: white ;
+}
+
+body{
+    background-color:#1E3E62;
+}
+
+.d-flex{
+    width: 25%;
+}
