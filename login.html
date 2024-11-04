@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              hijausip: "#798645",
+              krem: "#FEFAE0",
+              kremspan: "#d9d5be",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+    <title>Log In</title>
+  </head>
+  <body class="bg-krem flex items-center justify-center min-h-screen overflow-hidden">
+    <div
+      class="max-w-4xl p-6 bg-hijausip border border-hijausip-200 rounded-lg shadow dark:bg-hijausip-800"
+    >
+      <section class="login">
+        <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
+          <main
+            class="flex items-center justify-center px-4 py-4 sm:px-8 lg:col-span-7 lg:px-12 lg:py-8 xl:col-span-6"
+          >
+            <div class="max-w-xl lg:max-w-3xl">
+              <h1
+                class="mt-6 text-xl font-bold text-gray-900 sm:text-2xl md:text-3xl"
+              >
+                Welcome to cekUangku
+              </h1>
+              <br />
+
+              <form>
+                <div class="col-span-6">
+                  <label
+                    for="Username"
+                    class="block text-sm font-medium text-krem"
+                    >Username</label
+                  >
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                  />
+                </div>
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label
+                    for="Password"
+                    class="block text-sm font-medium text-krem"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    id="Password"
+                    name="password"
+                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                  />
+                </div>
+
+                <div class="col-span-6 sm:items-center sm:gap-4">
+                  <div class="shadow-2xl">
+                    <!-- kalo login ke menu -->
+                    <a href="#"> 
+                        <button
+                          class="inline-block shrink-0 rounded-md border border-white-600 bg-white-600 px-8 py-2 text-sm font-medium text-black transition hover:bg-transparent hover:text-black-600 focus:outline-none focus:ring active:text-black-500"
+                        >
+                          Login
+                        </button>
+                    </a>
+                  </div>
+
+                  <p class="mt-4 text-sm text-krem sm:mt-0">
+                    Doesn't have an account?
+                    <a href="regist.html" class="text-kremspan underline"
+                      >Sign in</a
+                    >.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </main>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
