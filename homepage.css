@@ -1,13 +1,9 @@
-.judul{
-    text-align: center;
-    margin-top: 150px;
-    color: white ;
+.navbar {
+  text-align: center;
 }
 
-body{
-    background-color:#1E3E62;
-}
-
-.d-flex{
-    width: 25%;
+*{
+ margin-top: 5px;
+ margin-left: 5px;
+ margin-right: 5px;
 }

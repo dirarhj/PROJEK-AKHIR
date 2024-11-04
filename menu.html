@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              hijausip: "#798645",
+              krem: "#FEFAE0",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="homepage.css" />
+    <title>Penghitung Pengeluaran</title>
+  </head>
+  <body class="bg-krem">
+    <!-- menu -->
+
+    <div class="menu">
+      <div class="sm:hidden">
+        <label for="Tab" class="sr-only">Tab</label>
+
+        <select id="Tab" class="w-full rounded-md border-gray-200">
+          <option select>Catat</option>
+          <option>Cari</option>
+        </select>
+      </div>
+
+      <div class="hidden sm:block">
+        <div class="border-b border-gray-200">
+          <nav class="-mb-px flex gap-6">
+            <a
+              href="menu.html"
+              class="shrink-0 rounded-t-lg border border-gray-300 border-b-white p-3 text-sm font-medium text-sky-600"
+            >
+              Catat
+            </a>
+
+            <a
+              href="data.html"
+              class="shrink-0 border border-transparent p-3 text-sm font-medium text-gray-500 hover:text-gray-700"
+            >
+              Data
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- menu close -->
+
+    <!-- isi -->
+    
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+              <th scope="col" class="px-6 py-3">
+                  Product name
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Color
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Category
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Price
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  <span class="sr-only">Edit</span>
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  Apple MacBook Pro 17"
+              </th>
+              <td class="px-6 py-4">
+                  Silver
+              </td>
+              <td class="px-6 py-4">
+                  Laptop
+              </td>
+              <td class="px-6 py-4">
+                  $2999
+              </td>
+              <td class="px-6 py-4 text-right">
+                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+              </td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  Microsoft Surface Pro
+              </th>
+              <td class="px-6 py-4">
+                  White
+              </td>
+              <td class="px-6 py-4">
+                  Laptop PC
+              </td>
+              <td class="px-6 py-4">
+                  $1999
+              </td>
+              <td class="px-6 py-4 text-right">
+                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+              </td>
+          </tr>
+          <tr class="bg-white dark:bg-gray-800">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  Magic Mouse 2
+              </th>
+              <td class="px-6 py-4">
+                  Black
+              </td>
+              <td class="px-6 py-4">
+                  Accessories
+              </td>
+              <td class="px-6 py-4">
+                  $99
+              </td>
+              <td class="px-6 py-4 text-right">
+                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+  <!-- isi close -->
+  </body>
+</html>
