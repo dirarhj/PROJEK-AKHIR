@@ -17,121 +17,79 @@
             },
           };
         </script>
-        <link rel="stylesheet" href="homepage.css" />
+        <link rel="stylesheet" href="styles/regist.css" />
     <title>Sign In</title>
 </head>
-<body class="bg-hijausip">
+<body style="background-color: #EEE2B5;">
 
-<section class="regist">
-    <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
+  <section class="regist">
+    <div class="lg:min-h-screen">
       <main
-        class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6"
-      >
-        <div class="max-w-xl lg:max-w-3xl">
-  
-          <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-            Welcome to cekUangku
-          </h1>
-  
-          <p class="mt-4 leading-relaxed text-gray-500">
-            
-          </p>
-  
-          <form action="#" class="mt-8 grid grid-cols-6 gap-6">
-            <div class="col-span-6 sm:col-span-3">
-              <label for="FirstName" class="block text-sm font-medium text-krem">
-                First Name
-              </label>
-  
-              <input
-                type="text"
-                id="FirstName"
-                name="first_name"
-                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
-            </div>
-  
-            <div class="col-span-6 sm:col-span-3">
-              <label for="LastName" class="block text-sm font-medium text-krem">
-                Last Name
-              </label>
-  
-              <input
-                type="text"
-                id="LastName"
-                name="last_name"
-                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
-            </div>
-  
-            <div class="col-span-6">
-              <label for="Email" class="block text-sm font-medium text-krem"> Username </label>
-  
-              <input
-                type="username"
-                id="username"
-                name="username"
-                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
-            </div>
-  
-            <div class="col-span-6 sm:col-span-3">
-              <label for="Password" class="block text-sm font-medium text-krem"> Password </label>
-  
-              <input
-                type="password"
-                id="Password"
-                name="password"
-                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
-            </div>
-  
-            <div class="col-span-6 sm:col-span-3">
-              <label for="PasswordConfirmation" class="block text-sm font-medium text-krem">
-                Password Confirmation
-              </label>
-  
-              <input
-                type="password"
-                id="PasswordConfirmation"
-                name="password_confirmation"
-                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
-            </div>
-  
-            <div class="col-span-6">
-              <label for="MarketingAccept" class="flex gap-4">
-                <input
-                  type="checkbox"
-                  id="MarketingAccept"
-                  name="marketing_accept"
-                  class="size-5 rounded-md border-gray-200 bg-white shadow-sm"
-                />
-  
-                <span class="text-sm text-krem">
-                  I want to receive emails about events, product updates and company announcements.
-                </span>
-              </label>
-            </div>
-  
-            <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
-                <div class="shadow-2xl">
-                    <button
-                      class=" box-shadow: 0 50px 50px -12px rgb(255, 255, 255 / 1) inline-block shrink-0 rounded-md border border-white-600 bg-white-600 px-12 py-3 text-sm font-medium text-black transition hover:bg-transparent hover:text-black-600 focus:outline-none focus:ring active:text-black-500"
-                    >
-                      Create an account
-                    </button>
+      class="flex items-center justify-center py-8">
+      <div class="w-full">
+        <form class="form" action="login.html">
+            <h1 class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
+              Welcome to cekUangku
+            </h1>    
+            <form action="login.html" class="mt-8"> 
+              <div class="flex space-x-4">
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="FirstName" class="block text-sm font-medium text-krem">
+                    First Name
+                  </label>
+                  <input type="text" placeholder="First Name" name="FirstName" class="input">
                 </div>
-  
-              <p class="mt-4 text-sm text-krem sm:mt-0">
-                Already have an account?
-                <a href="login.html" class="text-kremspan underline">Log in</a>.
-              </p>
-            </div>
+      
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="LastName" class="block text-sm font-medium text-krem">
+                    Last Name
+                  </label>
+      
+                  <input type="text" placeholder="Last Name" name="LastName" class="input">
+                </div>
+              </div>
+    
+              <div class="col-span-6">
+                <label for="Email" class="block text-sm font-medium text-krem"> Username </label>
+    
+                <input type="text" placeholder="Username" name="Username" class="input">
+              </div>
+    
+              <div class="col-span-6 sm:col-span-3">
+                <label for="Password" class="block text-sm font-medium text-krem"> Password </label>
+    
+                <input type="password" placeholder="Password" name="password" class="input">
+              </div>
+    
+              <div class="col-span-6 sm:col-span-3">
+                <label for="PasswordConfirmation" class="block text-sm font-medium text-krem">
+                  Password Confirmation
+                </label>
+    
+                <input type="password" placeholder="Password Confirmation" name="PasswordConfirmation" class="input">
+              </div>
+    
+              <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+                  <div class="shadow-2xl">
+                   
+                      <button
+                        class="button-confirm"
+                        type="submit"
+                      >
+                        Create an account
+                      </button>
+                    
+                  </div>
+                <p class="mt-4 text-sm text-krem sm:mt-0">
+                  Already have an account?
+                  <a href="login.html" class="text-kremspan underline">Log in</a>.
+                </p>
+              </div>
+            </form>
           </form>
-        </div>
-      </main>
-    </div>
-  </section>
+          </div>
+        </main>
+      </div>
+    </section>
 </body>
 </html>
