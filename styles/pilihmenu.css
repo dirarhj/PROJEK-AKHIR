@@ -21,17 +21,16 @@
   .title {
     color:#F6FCDF;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 20px;
     margin-bottom: 25px;
-    margin: 20px auto 0 auto;
-    
+    margin: 50px auto 0 auto;
   }
   
   .title span {
     color: var(--font-color-sub);
     font-weight: 600;
-    font-size: 20px;
-    margin: 20px auto 0 auto;
+    font-size: 17px;
+    margin: 50px auto 0 auto;
   }
   
   .input {
@@ -92,3 +91,4 @@
   a:link{
     margin: 0 auto 0 auto; 
   }
+

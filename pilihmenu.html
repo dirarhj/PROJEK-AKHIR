@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              hijausip: "#798645",
+              krem: "#FEFAE0",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles/pilihmenu.css" />
+    <title>Penghitung Pengeluaran</title>
+  </head>
+  <body style="background-color: #fefae0">
+    <!-- nav -->
+    <header class="bg-hijausip">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <h1 class="flex h-7 items-left font-bold text-3xl">cekUangku</h1>
+          <div class="flex-1 md:flex md:items-center md:gap-12">
+            <!-- cari -->
+            <div class="relative">
+              <label for="Search" class="sr-only"> Search </label>
+
+              <input
+                type="date"
+                id="Search"
+                class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm"
+              />
+
+              <span
+                class="absolute inset-y-0 end-0 grid w-10 place-content-center"
+              >
+                <button type="button" class="text-gray-600 hover:text-gray-700">
+                  <span class="sr-only">Search</span>
+                  <a href="cari.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                      />
+                    </svg>
+                  </a>
+                </button>
+              </span>
+            </div>
+            <!-- cari close -->
+          </div>
+          <div class="md:flex md:items-center md:gap-12">
+            <nav aria-label="Global" class="hidden md:block">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <form method="POST" action="#">
+                    <button
+                      type="submit"
+                      class="font-bold flex w-full items-center gap-2 rounded-lg px-4 py-2 text-sm text-red-700"
+                      role="menuitem"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+                        />
+                      </svg>
+
+                      Logout
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="hidden md:relative md:block">
+              <button
+                type="button"
+                class="overflow-hidden rounded-full border border-gray-300 shadow-inner"
+              >
+                <span class="sr-only">Toggle dashboard menu</span>
+
+                <img
+                  src="https://th.bing.com/th/id/OIP.Mv75orslvu8eBf-ccAdzZAHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                  alt=""
+                  class="size-10 object-cover"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- nav close -->
+
+    <section class="flex items-center justify-center max-h-screen relative">
+      <form action="pilihmenu.html" class="form">
+        <div class="max-w-screen-xl px-60 py-20 sm:px-90 sm:py-30">
+          <div class="mx-auto max-w-lg text-center">
+            <h1 class="text-5xl font-bold sm:text-4xl">Welcome</h1>
+            <br />
+            <h1 class="text-5xl font-bold sm:text-4xl">Pengeluaranmu : </h1>
+            <h1 class="text-5xl font-bold sm:text-4xl">Rp. 3.000.000</h1>
+            <a href="catat.html" class="absolute bottom-1 right-5 text-4xl text-hijausip">
+              <i class="bi bi-plus-square-fill"></i>
+            </a>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
