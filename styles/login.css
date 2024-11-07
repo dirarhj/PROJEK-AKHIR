@@ -92,3 +92,18 @@
   a:link{
     margin: 0 auto 0 auto; 
   }
+.tabelcari {
+  width: 100%; 
+  margin: 0 auto; 
+  border-collapse: collapse; 
+}
+
+.tabelcari th, .tabelcari td {
+  text-align: center; 
+  padding: 12px; 
+}
+
+.tabelcari th {
+  background-color: #FEFAE0; 
+  font-weight: bold; 
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              hijausip: "#798645",
+              krem: "#FEFAE0",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Penghitung Pengeluaran</title>
+  </head>
+  <body class="bg-krem">
+    <!-- nav -->
+    <header class="bg-hijausip">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <h1 class="flex h-7 items-left font-bold text-3xl">cekUangku</h1>
+          <div class="flex-1 md:flex md:items-center md:gap-12"></div>
+
+          <div class="md:flex md:items-center md:gap-12">
+            <nav aria-label="Global" class="hidden md:block">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <a
+                    class="mt-2 font-bold text-black-500 transition hover:text-black-500/75"
+                    href="catat.html"
+                  >
+                    Catat
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="mt-2 font-bold text-black-500 transition hover:text-black-500/75"
+                    href="cari.html"
+                  >
+                    Cari
+                  </a>
+                </li>
+
+                <li>
+                  <form method="POST" action="login.html">
+                    <button
+                      type="submit"
+                      class="font-bold flex w-full items-center gap-2 rounded-lg px-4 py-2 text-sm text-red-700"
+                      role="menuitem"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+                        />
+                      </svg>
+
+                      Logout
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="hidden md:relative md:block">
+              <a href="profil.html">
+                <button
+                  type="button"
+                  class="overflow-hidden rounded-full border border-gray-300 shadow-inner"
+                >
+                  <span class="sr-only">profil</span>
+
+                  <img
+                    src="https://th.bing.com/th/id/OIP.Mv75orslvu8eBf-ccAdzZAHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt=""
+                    class="size-10 object-cover"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- nav close -->
+
+    <!-- table -->
+    <form action="cari.html" class="form">
+      <tr>
+        <td>
+          <div class="relative">
+            <label for="Search" class="sr-only" style="text-align: right">
+              Search
+            </label>
+            <input
+              style="text-align: center"
+              type="date"
+              id="Search"
+              placeholder="Search for..."
+              class="w-full rounded-md border-black-200 py-2.5 pe-11 shadow-sm sm:text-sm"
+            />
+
+            <span
+              class="absolute inset-y-0 end-0 grid w-10 place-content-center"
+            >
+              <button type="button" class="text-gray-600 hover:text-gray-700">
+                <span class="sr-only">Search</span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </button>
+            </span>
+          </div>
+        </td>
+
+        <td>
+          <h2 style="font-size: large">tanggal</h2>
+        </td>
+      </tr>
+
+      <!-- isi -->
+      <div class="tabelcari">
+        <div class="overflow-x-auto w-full">
+          <table class="min-w-full divide-y-2 divide-black-200 bg-krem text-m">
+            <thead class="ltr:text-left rtl:text-right">
+              <tr>
+                <th class="px-4 py-2 font-medium text-black-900">
+                  Nama Pengeluaran
+                </th>
+                <th class="px-4 py-2 font-medium text-black-900">Harga</th>
+                <th class="px-4 py-2 font-medium text-black-900">Jumlah</th>
+                <th class="px-4 py-2"></th>
+              </tr>
+            </thead>
+
+            <tbody class="divide-y divide-black-200">
+              <tr>
+                <td class="px-4 py-2 font-medium text-gray-900">bakso coro</td>
+                <td class="px-4 py-2 text-gray-700">20000</td>
+                <td class="px-4 py-2 text-gray-700">1</td>
+                <td class="px-4 py-2">
+                  <a
+                    href="fungsi/edit.html"
+                    class="inline-block rounded bg-hijausip px-4 py-2 text-xs font-medium text-white hover:bg-green-700"
+                  >
+                    <i class="bi bi-pencil-fill"></i>
+                  </a>
+                  <a
+                    href="fungsi/delete.html"
+                    class="inline-block rounded bg-hijausip px-4 py-2 text-xs font-medium text-white hover:bg-green-700"
+                  >
+                    <i class="bi bi-trash3-fill"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 font-medium text-gray-900">John Doe</td>
+                <td class="px-4 py-2 text-gray-700">24/05/1995</td>
+                <td class="px-4 py-2 text-gray-700">Web Developer</td>
+                <td class="px-4 py-2">
+                  <a
+                    href="fungsi/edit.html"
+                    class="inline-block rounded bg-hijausip px-4 py-2 text-xs font-medium text-white hover:bg-green-700"
+                  >
+                    <i class="bi bi-pencil-fill"></i>
+                  </a>
+                  <a
+                    href="fungsi/delete.html"
+                    class="inline-block rounded bg-hijausip px-4 py-2 text-xs font-medium text-white hover:bg-green-700"
+                  >
+                    <i class="bi bi-trash3-fill"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- isi close -->
+    </form>
+    <!-- table close -->
+  </body>
+</html>
