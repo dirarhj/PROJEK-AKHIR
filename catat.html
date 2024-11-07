@@ -16,7 +16,7 @@
         },
       };
     </script>
-    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <title>Penghitung Pengeluaran</title>
   </head>
   <body class="bg-krem">
@@ -97,11 +97,70 @@
     <!-- nav close -->
 
     <!-- table -->
+    <form action="catat.html" class="form">
+    <label
+      for="beli"
+      class="block overflow-hidden shadow-sm focus-within:border-black-600 focus-within:ring-1 focus-within:ring-black-600"
+    >
+      <span class="text-xl font-medium text-black-700">
+        Apa yang habis kamu beli?
+      </span>
 
+      <input
+        type="text"
+        id="beli"
+        class="mt-1 w-full h-10 rounded-md border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+      />
+    </label>
+    
+    <label
+      for="beli"
+      class="block overflow-hidden shadow-sm focus-within:border-black-600 focus-within:ring-1 focus-within:ring-black-600"
+    >
+      <span class="text-xl font-medium text-black-700">
+        Harga
+      </span>
+
+      <input
+        type="number"
+        id="quantity"
+        min="0"
+        class="mt-1 w-full h-10 rounded-md border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+      />
+    </label>
+
+    
+    <label
+    for="banyak"
+    class="block overflow-hidden shadow-sm focus-within:border-black-600 focus-within:ring-1 focus-within:ring-black-600"
+  >
+    <span class="text-xl font-medium text-black-700">
+      Banyaknya
+    </span>
+
+<div>
+  <label for="Quantity" class="sr-only"> Quantity </label>
+
+  <div class="flex items-center gap-1">
+    <button type="button" class="size-10 leading-10 text-black-600 ">
+      &minus;
+    </button>
+
+    <input
+      type="number"
+      id="Quantity"
+      value="1"
+      class="h-10 w-16 rounded border-black-200 text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none"
+    />
+
+    <button type="button" class="size-10 leading-10 text-black-600 ">
+      &plus;
+    </button>
+  </div>
+</div>
+
+<button class="button-confirm" type="submit">Submit</button>
+</form>
     <!-- table close -->
-
-    <!-- submit -->
-
-    <!-- submit close -->
   </body>
 </html>
