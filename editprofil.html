@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profil</title>
+    <link rel="stylesheet" href="styles/profil.css"> 
+</head>
+<body>
+
+<div class="container">
+    <h1>Edit Profil</h1>
+    <form action="submit_profile.php" method="POST">
+        <div class="info">
+            <label>Gambar Profil:</label>
+            <img src="https://th.bing.com/th/id/OIP.Mv75orslvu8eBf-ccAdzZAHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Gambar Profil" class="edit-profile-picture" id="profileImage" >
+            <input type="file" name="profile_picture" id="profilePictureInput" accept="image/*" style="display: none;">
+        </div>
+        <div class="info">
+            <label>Nama:</label>
+            <input type="text" name="name" value="John Doe" required>
+        </div>
+        <div class="info">
+            <label>Email:</label>
+            <input type="email" name="email" value="johndoe@example.com" required>
+        </div>
+        <div class="info">
+            <label>Telepon:</label>
+            <input type="text" name="phone" value="(021) 123-4567" required>
+        </div>
+        <div class="info">
+            <label>Alamat:</label>
+            <input type="text" name="address" value="Jl. Contoh No. 123, Jakarta, Indonesia" required>
+        </div>
+        <div class="info">
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="dob" value="1990-01-01" required>
+        </div>
+        <a href="profil.html" type="submit" class="submit-button">Simpan</a>
+        <a href="profil.html" class="cancel-button">Batal</a>
+    </form>
+</div>
+
+</body>
+</html>
